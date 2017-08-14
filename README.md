@@ -32,6 +32,6 @@ the following notes:
 
 # Other notes
 
-* Tested with one older and one current (2.3.3) SDK version of Appsee.
+* Tested with Appsee SDK versions 2.3.2, 2.3.3, and 2.3.4.
 * Bugs occur both in simulator and on physical device.
 * Bugs seem to occur across several different versions of Xcode, iOS, and React Native.
