@@ -6,7 +6,7 @@ target 'AppseeEmbeddedRNIssues' do
   # use_frameworks!
 
   # Pods for AppseeEmbeddedRNIssues
-  pod 'Appsee'
+  pod 'Appsee', '2.3.4'
 
   #target 'AppseeEmbeddedRNIssues-tvOSTests' do
   #  inherit! :search_paths

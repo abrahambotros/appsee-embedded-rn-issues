@@ -9,8 +9,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   
-  [Appsee start:@"test"];
-  [Appsee setUserID:@"test"];
+  [Appsee start:@"<Insert valid Appsee key here>"];
+  [Appsee setUserID:@"1"];
   
   NSURL *jsCodeLocation;
 
