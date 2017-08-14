@@ -15,6 +15,10 @@ the following notes:
   everything works as expected.
 * Bugs above do NOT occur if Appsee is not present in the project, if Appsee is commented out, OR
   if it does not have a valid connection (i.e., leaving the Appsee API key to "test" or similar).
+* **Note that these errors seem to only occur if Appsee is installed and launched via Xcode/ObjC, either manually as
+  a framework or via Pods. Errors seem to not be present when Appsee is installed and launched entirely via
+  React Native/npm/JS.** (See branch [`install-appsee-via-react-native-npm`](https://github.com/abrahambotros/appsee-embedded-rn-issues/tree/install-appsee-via-rn-npm)
+  for installation via React Native/npm/JS.)
 
 # Steps to recreate
 
