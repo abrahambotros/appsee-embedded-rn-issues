@@ -1,3 +1,5 @@
+# Description of errors
+
 Minimal example to highlight some issues with Appsee interfering with child React Native views. See
 the following notes:
 
@@ -14,7 +16,21 @@ the following notes:
 - Bugs above do NOT occur if Appsee is not present in the project, if Appsee is commented out, OR
   if it does not have a valid connection (i.e., leaving the Appsee API key to "test" or similar).
 
-Other notes:
+# Steps to recreate
+
+1. `pod install` - note that this installs specifically the latest version of Appsee via Pods.
+2. In `AppDelegate.m`, insert a valid Appsee key.
+  i. Alternatively, comment out the Appsee setup to test the default case with no Appsee, which has no errors.
+  ii. Note that setting the Appsee key to "test" or an empty string will actually lead to none of the errors described occurring, which further points to a functional Appsee runtime being the culprit.
+3. Run.
+4. Scroll/fling the scrollable items around, and try to press the blue "Press" button.
+  i. Note that when Appsee is on, pressing the button is blocked until after the scrollable items have stopped scrolling and an additional wasted press is already made.
+  ii. Note that when Appsee is off, there are no such errors.
+5. Drag the bottom red area around.
+  i. Note that when Appsee is on and the drag starts fairly quickly, the drag freezes erroneously.
+  ii. Note that when Appsee is off, the drag moves with the press as expected, with no errors.
+
+# Other notes
 
 - Tested with one older and one current (2.3.3) SDK version of Appsee.
 - Bugs occur both in simulator and on physical device.
