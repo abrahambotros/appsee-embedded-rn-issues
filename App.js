@@ -10,6 +10,7 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
+const Appsee = require("react-native-appsee");
 
 const dataItems = [];
 for (let i = 0; i < 100; i++) {
@@ -27,6 +28,8 @@ export default class App extends React.Component {
 
   componentWillMount() {
     this.initPanResponder();
+    Appsee.start("<Insert valid Appsee key here>");
+    Appsee.setUserId("1");
   }
 
   initPanResponder = () => {

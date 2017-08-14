@@ -2,15 +2,15 @@
 
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
-#import <Appsee/Appsee.h>
+//#import <Appsee/Appsee.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   
-  [Appsee start:@"<Insert valid Appsee key here>"];
-  [Appsee setUserID:@"1"];
+//  [Appsee start:@"<Insert valid Appsee key here>"];
+//  [Appsee setUserID:@"1"];
   
   NSURL *jsCodeLocation;
 
