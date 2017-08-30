@@ -1,3 +1,7 @@
+# [UPDATE AS OF 2017-08-29]
+
+Issues mentioned below seem to be resolved thanks to Appsee Support (thanks!) and the new directions at [https://support.appsee.com/customer/portal/articles/2866015-how-should-i-integrate-if-my-app-is-react-native-within-a-native-envelope-](https://support.appsee.com/customer/portal/articles/2866015-how-should-i-integrate-if-my-app-is-react-native-within-a-native-envelope-).
+
 # Description of errors
 
 Minimal example to highlight some issues with Appsee interfering with child React Native views. See
