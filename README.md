@@ -23,7 +23,7 @@ the following notes:
 # Steps to recreate
 
 1. `npm install`
-2. `pod install` - note that this installs specifically the latest version of Appsee via Pods.
+2. `cd ios; pod install` - note that this installs specifically the latest version of Appsee via Pods.
 3. In `AppDelegate.m`, insert a valid Appsee key.
     1. Alternatively, comment out the Appsee setup to test the default case with no Appsee, which has no errors.
     2. Note that setting the Appsee key to "test" or an empty string will actually lead to none of the errors described occurring, which further points to a functional Appsee runtime being the culprit.
