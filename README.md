@@ -22,15 +22,16 @@ the following notes:
 
 # Steps to recreate
 
-1. `pod install` - note that this installs specifically the latest version of Appsee via Pods.
-2. In `AppDelegate.m`, insert a valid Appsee key.
+1. `npm install`
+2. `pod install` - note that this installs specifically the latest version of Appsee via Pods.
+3. In `AppDelegate.m`, insert a valid Appsee key.
     1. Alternatively, comment out the Appsee setup to test the default case with no Appsee, which has no errors.
     2. Note that setting the Appsee key to "test" or an empty string will actually lead to none of the errors described occurring, which further points to a functional Appsee runtime being the culprit.
-3. Run.
-4. Scroll/fling the scrollable items around, and try to press the blue "Press" button.
+4. Run.
+5. Scroll/fling the scrollable items around, and try to press the blue "Press" button.
     1. Note that when Appsee is on, pressing the button is blocked until after the scrollable items have stopped scrolling and an additional wasted press is already made.
     2. Note that when Appsee is off, there are no such errors.
-5. Drag the bottom red area around.
+6. Drag the bottom red area around.
     1. Note that when Appsee is on and the drag starts fairly quickly, the drag freezes erroneously.
     2. Note that when Appsee is off, the drag moves with the press as expected, with no errors.
 
